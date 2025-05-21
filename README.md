@@ -14,15 +14,15 @@ User facing docs and guide at: <a style="font-weight: bold;" href="https://wezte
 
 **screenshot1**
 
-![Image_20250520_020023](.\screenshots\Image_20250520_020023.png)
+![Image_20250520_020023](./screenshots/Image_20250520_020023.png)
 
 **screenshot2**
 
-![Image_20250520_020246](.\screenshots\Image_20250520_020246.png)
+![Image_20250520_020246](./screenshots/Image_20250520_020246.png)
 
 **screenshot3**
 
-![Image_20250520_020333](.\screenshots\Image_20250520_020333.png)
+![Image_20250520_020333](./screenshots/Image_20250520_020333.png)
 
 ### Requirements
 

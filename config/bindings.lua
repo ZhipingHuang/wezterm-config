@@ -21,10 +21,12 @@ local keys = {
   { key = "F11", mods = "NONE", action = act.ToggleFullScreen },
   { key = "F12", mods = "NONE", action = act.ShowDebugOverlay },
   { key = "f", mods = mod.SUPER, action = act.Search({ CaseInSensitiveString = "" }) },
+  -- misc/useful end --
 
   -- copy/paste --
   { key = "c", mods = "CTRL|SHIFT", action = act.CopyTo("Clipboard") },
   { key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("Clipboard") },
+  -- copy/paste end--
 
   -- tabs --
   -- tabs: spawn+close
@@ -38,18 +40,18 @@ local keys = {
   { key = "]", mods = mod.SUPER, action = act.ActivateTabRelative(1) },
   { key = "[", mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
   { key = "]", mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
-
-  -- window --
+  { key = 'Tab', mods = 'CTRL', action = act.ActivateTabRelative(1) },
+  -- tabs end --
+  
+  -- windows --
   -- spawn windows
   { key = "n", mods = mod.SUPER, action = act.SpawnWindow },
+  -- windows end --
 
   -- panes --
   -- panes: split panes
-  --------------------------------------------
- 
-  --------------------------------------------
   {
-    key = [[/]],
+    key = [[-]],
     mods = mod.SUPER_REV,
     action = act.SplitVertical({ domain = "CurrentPaneDomain" }),
   },
@@ -59,7 +61,7 @@ local keys = {
     action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }),
   },
   {
-    key = [[-]],
+    key = [[/]],
     mods = mod.SUPER_REV,
     action = act.CloseCurrentPane({ confirm = true }),
   },
@@ -79,12 +81,14 @@ local keys = {
   { key = "DownArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Down", 1 }) },
   { key = "LeftArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Left", 1 }) },
   { key = "RightArrow", mods = mod.SUPER_REV, action = act.AdjustPaneSize({ "Right", 1 }) },
-
+  -- panes end --
+  
   -- fonts --
   -- fonts: resize
   { key = "UpArrow", mods = mod.SUPER, action = act.IncreaseFontSize },
   { key = "DownArrow", mods = mod.SUPER, action = act.DecreaseFontSize },
   { key = "r", mods = mod.SUPER, action = act.ResetFontSize },
+  -- fonts end --
 
   -- key-tables --
   -- resizes fonts
@@ -97,6 +101,7 @@ local keys = {
       timemout_miliseconds = 1000,
     }),
   },
+
   -- resize panes
   {
     key = "p",
@@ -107,6 +112,7 @@ local keys = {
       timemout_miliseconds = 1000,
     }),
   },
+
   -- rename tab bar
   {
     key = "R",
@@ -133,6 +139,7 @@ local key_tables = {
     { key = "Escape", action = "PopKeyTable" },
     { key = "q", action = "PopKeyTable" },
   },
+
   resize_pane = {
     { key = "k", action = act.AdjustPaneSize({ "Up", 1 }) },
     { key = "j", action = act.AdjustPaneSize({ "Down", 1 }) },
@@ -200,6 +207,17 @@ local mouse_bindings = {
     action = act.ScrollByCurrentEventWheelDelta,
   },
 }
+
+----------------Add Your Conf-----------------
+-- ALT+number to activate that tab
+for i = 1, 8 do
+  table.insert(keys, {
+    key = tostring(i),
+    mods = 'ALT',
+    action = act.ActivateTab(i - 1),
+  })
+end
+----------------------------------------------
 
 return {
   disable_default_key_bindings = true,

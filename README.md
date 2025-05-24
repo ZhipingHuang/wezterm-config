@@ -125,24 +125,24 @@ Download the corresponding font from the [NerdFont official website](https://www
 
 ##### resize panes
 
-| Leader+p | 进入pane调整模式       | resize panes mode       |
-| -------- | ---------------------- | :---------------------- |
-| h        | 调整当前pane大小(向左) | adjust pane size(left)  |
-| l        | 调整当前pane大小(向右) | adjust pane size(right) |
-| j        | 调整当前pane大小(向下) | adjust pane size(down)  |
-| k        | 调整当前pane大小(向上) | adjust pane size(up)    |
-| Esc      | 退出pane调整模式       | quit                    |
-| q        | 退出pane调整模式       | quit                    |
+| Leader+p |    进入pane调整模式    | resize panes mode       |
+| :------: | :--------------------: | :---------------------- |
+|    h     | 调整当前pane大小(向左) | adjust pane size(left)  |
+|    l     | 调整当前pane大小(向右) | adjust pane size(right) |
+|    j     | 调整当前pane大小(向下) | adjust pane size(down)  |
+|    k     | 调整当前pane大小(向上) | adjust pane size(up)    |
+|   Esc    |    退出pane调整模式    | quit                    |
+|    q     |    退出pane调整模式    | quit                    |
 
 ##### resize fonts
 
 | Leader+f | 进入font调整模式 | resize fonts mode  |
-| -------- | ---------------- | :----------------- |
-| k        | 放大字体         | increase font size |
-| j        | 缩小字体         | decrease font size |
-| r        | 重置字体大小     | reset font size    |
-| Esc      | 退出font调整模式 | quit               |
-| q        | 退出font调整模式 | quit               |
+| :------: | :--------------: | :----------------- |
+|    k     |     放大字体     | increase font size |
+|    j     |     缩小字体     | decrease font size |
+|    r     |   重置字体大小   | reset font size    |
+|   Esc    | 退出font调整模式 | quit               |
+|    q     | 退出font调整模式 | quit               |
 
 ### Reference
 

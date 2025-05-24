@@ -65,8 +65,8 @@ Download the corresponding font from the [NerdFont official website](https://www
 | Ctrl+Shift+v  |          粘贴          |
 | Ctrl+Shift+r  |      重命名标签栏      |
 | Ctrl+Alt+[\\] | 水平拆分窗格(左右拆分) |
-| Ctrl+Alt+[/]  | 垂直拆分窗格(上下拆分) |
-| Ctrl+Alt+[-]  |      关闭当前窗格      |
+| Ctrl+Alt+[-]  | 垂直拆分窗格(上下拆分) |
+| Ctrl+Alt+[/]  |      关闭当前窗格      |
 |  Ctrl+Alt+z   | 最大化/最小化当前窗格  |
 |      F11      |          全屏          |
 | Ctrl+Alt+[↑]  |      向上扩展窗格      |

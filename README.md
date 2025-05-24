@@ -59,23 +59,90 @@ Download the corresponding font from the [NerdFont official website](https://www
 
 ### Keymaps
 
-|      Key      |      Description       |
-| :-----------: | :--------------------: |
-| Ctrl+Shift+c  |          复制          |
-| Ctrl+Shift+v  |          粘贴          |
-| Ctrl+Shift+r  |      重命名标签栏      |
-| Ctrl+Alt+[\\] | 水平拆分窗格(左右拆分) |
-| Ctrl+Alt+[-]  | 垂直拆分窗格(上下拆分) |
-| Ctrl+Alt+[/]  |      关闭当前窗格      |
-|  Ctrl+Alt+z   | 最大化/最小化当前窗格  |
-|      F11      |          全屏          |
-| Ctrl+Alt+[↑]  |      向上扩展窗格      |
-| Ctrl+Alt+[↓]  |      向下扩展窗格      |
-| Ctrl+Alt+[←]  |      向左扩展窗格      |
-| Ctrl+Alt+[→]  |      向右扩展窗格      |
-|    Alt+[↑]    |        放大字体        |
-|    Alt+[↓]    |        缩小字体        |
-|     Alt+r     |      重置字体大小      |
+#### misc
+
+| F1    |                 | activate copy mode       |
+| ----- | --------------- | :----------------------- |
+| F2    |                 | activate command palette |
+| F3    |                 | show launcher            |
+| F4    | 查看所有tab情况 | show tab navigator       |
+| F11   | 全屏            | toggle full screen       |
+| F12   | 打开debug界面   | show debug overlay       |
+| Alt+f | 查找            | search                   |
+
+#### copy&paste
+
+| Ctrl+Shift+c | 复制 | copy  |
+| ------------ | ---- | ----- |
+| Ctrl+Shift+v | 粘贴 | paste |
+
+#### tab operation
+
+| Ctrl+Alt+t     | 根据当前domain创建新tab | spawn a new tab       |
+| -------------- | ----------------------- | :-------------------- |
+| Ctrl+Alt+w     | 关闭当前tab             | close current tab     |
+| Alt+[          | 切换至上一个tab         | activate previous tab |
+| Alt+]          | 切换至下一个tab         | activate next tab     |
+| Ctrl+Tab       | 切换至下一个tab         | activate next tab     |
+| Ctrl+Shift+Tab | 切换至上一个tab         | activate previous tab |
+| Ctrl+Alt+[     | 当前tab移动至左边       | move tab to previous  |
+| Ctrl+Alt+]     | 当前tab移动至右边       | move tab to next      |
+| Ctrl+Shift+r   | 重命名当前tab           | rename tab bar        |
+| ALT+Num[1~8]   | 切换至tab[1~8]          | activate tab[1~8]     |
+
+#### windows operation
+
+| Alt+n | 创建新的windows | spawn a new window |
+| ----- | --------------- | ------------------ |
+
+#### pane operation
+
+| Ctrl+Alt+[\\] |   水平拆分pane(左右拆分)   | split pane vertical            |
+| ------------- | :------------------------: | :----------------------------- |
+| Ctrl+Alt+[-]  |   垂直拆分pane(上下拆分)   | split pane horizontal          |
+| Ctrl+Alt+[/]  | 关闭当前pane（需主动确认） | close current pane(confirm)    |
+| Ctrl+Alt+z    |   最大化/最小化当前pane    | zoom pane                      |
+| Alt+w         |  关闭当前pane（无需确认）  | close current pane(no confirm) |
+| Crtl+Alt+h    |        向左移动光标        | move the cursor to the left    |
+| Crtl+Alt+l    |        向右移动光标        | move the cursor to the right   |
+| Crtl+Alt+j    |        向下移动光标        | move the cursor to the down    |
+| Crtl+Alt+k    |        向上移动光标        | move the cursor to the up      |
+| Ctrl+Alt+[↑]  |   调整当前pane大小(向上)   | adjust pane size(up)           |
+| Ctrl+Alt+[↓]  |   调整当前pane大小(向下)   | adjust pane size(down)         |
+| Ctrl+Alt+[←]  |   调整当前pane大小(向左)   | adjust pane size(left)         |
+| Ctrl+Alt+[→]  |   调整当前pane大小(向右)   | adjust pane size(right)        |
+
+#### font operation
+
+| Alt+[↑] | 放大字体     | increase font size |
+| ------- | ------------ | :----------------- |
+| Alt+[↓] | 缩小字体     | decrease font size |
+| Alt+r   | 重置字体大小 | reset font size    |
+
+#### Key Tables
+
+> **Leader**:Ctrl+Shift+Space
+
+##### resize panes
+
+| Leader+p | 进入pane调整模式       | resize panes mode       |
+| -------- | ---------------------- | :---------------------- |
+| h        | 调整当前pane大小(向左) | adjust pane size(left)  |
+| l        | 调整当前pane大小(向右) | adjust pane size(right) |
+| j        | 调整当前pane大小(向下) | adjust pane size(down)  |
+| k        | 调整当前pane大小(向上) | adjust pane size(up)    |
+| Esc      | 退出pane调整模式       | quit                    |
+| q        | 退出pane调整模式       | quit                    |
+
+##### resize fonts
+
+| Leader+f | 进入font调整模式 | resize fonts mode  |
+| -------- | ---------------- | :----------------- |
+| k        | 放大字体         | increase font size |
+| j        | 缩小字体         | decrease font size |
+| r        | 重置字体大小     | reset font size    |
+| Esc      | 退出font调整模式 | quit               |
+| q        | 退出font调整模式 | quit               |
 
 ### Reference
 
@@ -87,7 +154,7 @@ Download the corresponding font from the [NerdFont official website](https://www
 - <https://github.com/QianSong1/wezterm-config>
 - <https://github.com/KevinSilvester/wezterm-config>
 
-
+### Enioy
 
 🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈
 

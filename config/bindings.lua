@@ -40,6 +40,7 @@ local keys = {
   { key = "]", mods = mod.SUPER, action = act.ActivateTabRelative(1) },
   { key = "[", mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
   { key = "]", mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
+  { key = 'Tab', mods = 'CTRL|SHIFT', action = act.ActivateTabRelative(-1) },
   { key = 'Tab', mods = 'CTRL', action = act.ActivateTabRelative(1) },
   -- tabs end --
   
@@ -91,7 +92,7 @@ local keys = {
   -- fonts end --
 
   -- key-tables --
-  -- resizes fonts
+  -- resize fonts
   {
     key = "f",
     mods = "LEADER",
@@ -131,6 +132,7 @@ local keys = {
   },
 }
 
+-- Key Tables --
 local key_tables = {
   resize_font = {
     { key = "k", action = act.IncreaseFontSize },
